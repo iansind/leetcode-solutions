@@ -9,6 +9,5 @@ class Solution(object):
         l = len(s)
         
         for x in range(int(len(s)/2)):
-            p1, p2 = s[x], s[l-x-1]
-            s[x], s[l-x-1] = p2, p1
+            s[x], s[l-x-1] = s[l-x-1], s[x]
             
