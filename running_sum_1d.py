@@ -6,8 +6,4 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        out = []
-        for x in range(len(nums)):
-            out.append(sum(nums[0:x+1]))
-            
-        return out
+        return [sum(nums[0:x+1]) for x in range(len(nums))]
